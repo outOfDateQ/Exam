@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1692343530815') format('truetype');
+  font-family: "iconfont"; /* Project id 4217056 */
+  src: url('iconfont.woff2?t=1692420876559') format('woff2'),
+       url('iconfont.woff?t=1692420876559') format('woff'),
+       url('iconfont.ttf?t=1692420876559') format('truetype');
 }
 
 .iconfont {
@@ -11,7 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-tuichu:before {
-  content: "\e63e";
+.icon-24gl-extractLeft:before {
+  content: "\eb6f";
+}
+
+.icon-bianji:before {
+  content: "\e600";
+}
+
+.icon-caidan:before {
+  content: "\e607";
+}
+
+.icon-shalou:before {
+  content: "\e6b6";
+}
+
+.icon-calendar-full:before {
+  content: "\e9ab";
 }
 

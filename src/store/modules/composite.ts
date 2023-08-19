@@ -4,7 +4,7 @@ const useCompositeStore = defineStore('composite', {
   state: () => ({
     data: [
       {
-        title: '4S，16000毫安时电池1.5C充电，充电器应设置充电电流多少安培（    ）',
+        title: '4S，16000毫安时电池1.5C充电，充电器应设置充电电流多少安培',
         A: '18',
         B: '12',
         C: '24',
@@ -12,7 +12,7 @@ const useCompositeStore = defineStore('composite', {
         id: 1
       },
       {
-        title: '电台、接收机、调速器、电池、GPS、电机（多旋翼无人机以下哪个组设备连接是正确的）（    ）',
+        title: '电台、接收机、调速器、电池、GPS、电机（多旋翼无人机以下哪个组设备连接是正确的）',
         A: '接收机-调速器-电池-电台',
         B: '电池-调速器-电机',
         C: '调速-电机-GPS-接收机',
@@ -20,7 +20,7 @@ const useCompositeStore = defineStore('composite', {
         id: 2
       },
       {
-        title: '请选择出以下哪一只螺旋桨升力最大（    ）',
+        title: '请选择出以下哪一只螺旋桨升力最大',
         A: '15×4（四叶螺旋桨）',
         B: '18×7（两叶螺旋桨）',
         C: '16×4.5（三叶螺旋桨）',
@@ -28,7 +28,7 @@ const useCompositeStore = defineStore('composite', {
         id: 3
       },
       {
-        title: '遥控器、图传、地面站与飞行器之间数据链路分别是（    ）',
+        title: '遥控器、图传、地面站与飞行器之间数据链路分别是',
         A: '上行链路、下行链路、上行链路',
         B: '上行链路、下行链路、上下行链路并存',
         C: '下行链路、下行链路、上行链路',
@@ -36,7 +36,7 @@ const useCompositeStore = defineStore('composite', {
         id: 4
       },
       {
-        title: '多旋翼无人机自动驾驶状态下，安全下降速率应该是哪一个（    ）',
+        title: '多旋翼无人机自动驾驶状态下，安全下降速率应该是哪一个',
         A: '2米/秒',
         B: '8米/秒',
         C: '5米/秒',
@@ -44,7 +44,7 @@ const useCompositeStore = defineStore('composite', {
         id: 5
       },
       {
-        title: '若一架无人机在飞行中可以进行舵面遥控，但无实时图像信号，地面站有各类仪表信息，但无法编辑航点航线，请问该无人机的遥控器（    ）正常，图传（      ）故障，数传电台（      ）正常，（      ）故障',
+        title: '若一架无人机在飞行中可以进行舵面遥控，但无实时图像信号，地面站有各类仪表信息，但无法编辑航点航线，请问该无人机的遥控器正常，图传____故障，数传电台____正常，____故障',
         A: '上行链路、下行链路、下行链路、上行链路',
         B: '上行链路、上行链路、下行链路、下行链路',
         C: '下行链路、上行链路、下行链路、上行链路',
@@ -52,7 +52,7 @@ const useCompositeStore = defineStore('composite', {
         id: 6
       },
       {
-        title: '民用无人机调整中的基本感度是（    ）',
+        title: '民用无人机调整中的基本感度是',
         A: '飞控PID调节中的I积分系数',
         B: '飞控PID调节中的比例项P的系数',
         C: '飞控PID调节中的D微分系数',
@@ -60,7 +60,7 @@ const useCompositeStore = defineStore('composite', {
         id: 7
       },
       {
-        title: '6045R螺旋桨，45什么意思，是CW桨还是CCW桨（    ）',
+        title: '6045R螺旋桨，45什么意思，是CW桨还是CCW桨',
         A: '螺距、正桨',
         B: '螺距、反桨',
         C: '直径、反桨',
@@ -68,7 +68,7 @@ const useCompositeStore = defineStore('composite', {
         id: 8
       },
       {
-        title: '1865桨 300KV电机，2045桨 500KV电机同一架多轴，如果在高海拔地区飞行，应该选择哪种浆和电机的组合（    ）',
+        title: '1865桨 300KV电机，2045桨 500KV电机同一架多轴，如果在高海拔地区飞行，应该选择哪种浆和电机的组合',
         A: '2045桨 500KV电机',
         B: '1865桨 300KV电机',
         C: '都可以',
@@ -76,7 +76,7 @@ const useCompositeStore = defineStore('composite', {
         id: 9
       },
       {
-        title: '结合遥控器说说民用无人机系统有哪几条链路（    ）',
+        title: '结合遥控器说说民用无人机系统有哪几条链路',
         A: '遥控器下行，图传下行，数传上下行',
         B: '遥控器上行，图传下行，数传上下行',
         C: '遥控器上行，图传上下行，数传下行',
@@ -84,7 +84,7 @@ const useCompositeStore = defineStore('composite', {
         id: 10
       },
       {
-        title: '桨螺旋桨的主要技术参数有哪些（    ）',
+        title: '桨螺旋桨的主要技术参数有哪些',
         A: '直径，螺距，材料',
         B: '直径，螺距，桨叶数',
         C: '直径，螺距，桨叶数 材料',
@@ -92,7 +92,7 @@ const useCompositeStore = defineStore('composite', {
         id: 11
       },
       {
-        title: '一般冬天和夏天相比，我们返航电压应该怎么设置（    ）',
+        title: '一般冬天和夏天相比，我们返航电压应该怎么设置',
         A: '冬天要高于夏天冬天温度低，锂离子活性变低，持续放电时间短',
         B: '冬天要低于夏天冬天温度低，锂离子活性变低，持续放电时间短',
         C: '冬天要高于夏天冬天温度低，锂离子活性变高，持续放电时间短',
@@ -100,7 +100,7 @@ const useCompositeStore = defineStore('composite', {
         id: 12
       },
       {
-        title: '多旋翼飞行器如果重新组装后，必须校准哪些传感器（    ）',
+        title: '多旋翼飞行器如果重新组装后，必须校准哪些传感器',
         A: '磁罗盘，陀螺仪',
         B: '电调，GPS',
         C: '接收机，IMU',
@@ -108,7 +108,7 @@ const useCompositeStore = defineStore('composite', {
         id: 13
       },
       {
-        title: '升力公式L=Cl*ρV²*S中，各个字母的含义分别是（    ）',
+        title: '升力公式L=Cl*ρV²*S中，各个字母的含义分别是',
         A: 'Cl为升力系数，ρ是运行环境大气密度，V是真空速，S是机翼面积',
         B: 'Cl为升力系数，ρ是机体材料密度，V是真空速，S是机体迎风面积',
         C: 'Cl为升力系数，ρ是运行环境大气密度，V是地速，S是机体迎风面积',
@@ -116,7 +116,7 @@ const useCompositeStore = defineStore('composite', {
         id: 14
       },
       {
-        title: '飞机飞行中通过什么与地面站连接（    ）',
+        title: '飞机飞行中通过什么与地面站连接',
         A: '飞控 GPS',
         B: 'WIFI模块 电台',
         C: '接收机 遥控器',
@@ -124,7 +124,7 @@ const useCompositeStore = defineStore('composite', {
         id: 15
       },
       {
-        title: '4S 5000mah，2C充电，多久充满（    ）',
+        title: '4S 5000mah，2C充电，多久充满',
         A: '1小时',
         B: '2小时',
         C: '0.5小时',
@@ -132,7 +132,7 @@ const useCompositeStore = defineStore('composite', {
         id: 16
       },
       {
-        title: '已知某锂电池铭牌标记为6S2P3C，单片锂电池容量为16000mah，则该电池最大放电电流是（    ）',
+        title: '已知某锂电池铭牌标记为6S2P3C，单片锂电池容量为16000mah，则该电池最大放电电流是',
         A: '96A',
         B: '16A',
         C: '48A',
@@ -140,7 +140,7 @@ const useCompositeStore = defineStore('composite', {
         id: 17
       },
       {
-        title: '保持油门持续爬升，电机功率会增加还是减小（    ）',
+        title: '保持油门持续爬升，电机功率会增加还是减小',
         A: '增加',
         B: '减小',
         C: '不变',
@@ -148,7 +148,7 @@ const useCompositeStore = defineStore('composite', {
         id: 18
       },
       {
-        title: '以下哪种动力电池放电电流最大（    ）',
+        title: '以下哪种动力电池放电电流最大',
         A: '30000mAh，5C',
         B: '20000mAh，5C',
         C: '2Ah，30C',
@@ -156,7 +156,7 @@ const useCompositeStore = defineStore('composite', {
         id: 19
       },
       {
-        title: '以6S  5000mAh 20C（3C）锂电池为例,最大放电电流是多少（    ）',
+        title: '以6S  5000mAh 20C（3C）锂电池为例,最大放电电流是多少',
         A: '30A',
         B: '15A',
         C: '100A',
@@ -164,7 +164,7 @@ const useCompositeStore = defineStore('composite', {
         id: 20
       },
       {
-        title: '下列无人机部件中，电调杜邦线接什么（    ）',
+        title: '下列无人机部件中，电调杜邦线接什么',
         A: '接收机',
         B: '飞控',
         C: '电机',
@@ -172,7 +172,7 @@ const useCompositeStore = defineStore('composite', {
         id: 21
       },
       {
-        title: '标有60A的电调中，选用多大的电池合适（    ）',
+        title: '标有60A的电调中，选用多大的电池合适',
         A: '大于60A',
         B: '等于60A',
         C: '小于60A',
@@ -180,7 +180,7 @@ const useCompositeStore = defineStore('composite', {
         id: 22
       },
       {
-        title: '电调最粗的两根硅胶线连接什么（    ）',
+        title: '电调最粗的两根硅胶线连接什么',
         A: '电池',
         B: '电机',
         C: '飞控',
@@ -188,7 +188,7 @@ const useCompositeStore = defineStore('composite', {
         id: 23
       },
       {
-        title: '所使用的多旋翼无人机，其所使用的是定距螺旋桨还是变距螺旋桨（    ）',
+        title: '所使用的多旋翼无人机，其所使用的是定距螺旋桨还是变距螺旋桨',
         A: '变距螺旋桨',
         B: '定距螺旋桨',
         C: '有定距螺旋桨也有变距螺旋桨',
@@ -196,7 +196,7 @@ const useCompositeStore = defineStore('composite', {
         id: 24
       },
       {
-        title: '请选择出以下哪一只螺旋桨升力最大（    ）',
+        title: '请选择出以下哪一只螺旋桨升力最大',
         A: '18×7（两叶螺旋桨）',
         B: '16×4.5（三叶螺旋桨）',
         C: '15×4（四叶螺旋桨）',
@@ -204,7 +204,7 @@ const useCompositeStore = defineStore('composite', {
         id: 25
       },
       {
-        title: '多旋翼飞机如何实现左转弯，螺旋桨转速如何变化（    ）',
+        title: '多旋翼飞机如何实现左转弯，螺旋桨转速如何变化',
         A: '（顶视）顺时针减速 .逆时针加速',
         B: '（顶视）顺时针加速 .逆时针加速',
         C: '（顶视）顺时针加速 .逆时针减速',
@@ -212,7 +212,7 @@ const useCompositeStore = defineStore('composite', {
         id: 26
       },
       {
-        title: '在自主飞行过程中，遥控器油门的位置应处于（    ）',
+        title: '在自主飞行过程中，遥控器油门的位置应处于',
         A: '最大位置',
         B: '中间略上',
         C: '最小位置',
@@ -220,7 +220,7 @@ const useCompositeStore = defineStore('composite', {
         id: 27
       },
       {
-        title: '以下哪种多旋翼机架是“H”型（    ）',
+        title: '以下哪种多旋翼机架是“H”型',
         A: '“悟”',
         B: '“经纬M600”',
         C: '“MAVIC”',
@@ -228,7 +228,7 @@ const useCompositeStore = defineStore('composite', {
         id: 28
       },
       {
-        title: '多旋翼飞行器为什么一般相对的桨旋转方向是不一样的（    ）',
+        title: '多旋翼飞行器为什么一般相对的桨旋转方向是不一样的',
         A: '效率更高',
         B: '产生更大升力',
         C: '抵消反扭矩',
@@ -236,7 +236,7 @@ const useCompositeStore = defineStore('composite', {
         id: 29
       },
       {
-        title: '多旋翼有几个自由度？滚转运动是绕哪个轴转（    ）',
+        title: '多旋翼有几个自由度？滚转运动是绕哪个轴转',
         A: '6个，横轴',
         B: '6个，纵轴',
         C: '3个，横轴',

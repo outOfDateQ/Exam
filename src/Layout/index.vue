@@ -10,7 +10,7 @@
           <!-- <el-button type="primary" @click="logout">退出</el-button> -->
           <div class="logout" @click="logout">
             <span>退出</span>
-            <i class="iconfont icon-tuichu"></i>
+            <i class="iconfont icon-24gl-extractLeft"></i>
           </div>
         </template>
         <template v-else>

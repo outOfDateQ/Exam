@@ -9,6 +9,7 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs' // 国际化
 import '@/style/index.scss'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import '/public/iconfonts/iconfont.css'
+import './permission'
 
 const app = createApp(App)
 

@@ -10,9 +10,7 @@
           <!-- 表头 -->
           <template #header>
             <div class="header">
-              <el-icon>
-                <Operation />
-              </el-icon>
+              <i style="transform: translateY(1px);" class="iconfont icon-caidan"></i>
               <span>考试名称</span>
             </div>
           </template>
@@ -24,9 +22,7 @@
         <el-table-column align="center" width="150">
           <template #header>
             <div class="header">
-              <el-icon>
-                <DataAnalysis />
-              </el-icon>
+              <i style="font-size: 14px;transform: translateY(1px);" class="iconfont icon-calendar-full"></i>
               <span>考试时间</span>
             </div>
           </template>
@@ -38,9 +34,7 @@
         <el-table-column align="center" width="150">
           <template #header>
             <div class="header">
-              <el-icon>
-                <Timer />
-              </el-icon>
+              <i class="iconfont icon-shalou"></i>
               <span>考试时长</span>
             </div>
           </template>
@@ -52,9 +46,7 @@
         <el-table-column align="center" width="150">
           <template #header>
             <div class="header">
-              <el-icon>
-                <Timer />
-              </el-icon>
+              <i class="iconfont icon-shalou"></i>
               <span>剩余时长</span>
             </div>
           </template>
@@ -66,9 +58,7 @@
         <el-table-column align="center" width="150">
           <template #header>
             <div class="header">
-              <el-icon>
-                <Edit />
-              </el-icon>
+              <i style="transform: translateY(1px);" class="iconfont icon-bianji"></i>
               <span>操作</span>
             </div>
           </template>
@@ -217,6 +207,10 @@ const startTest = (row: any) => {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .icon-shalou {
+        transform: rotateZ(180deg);
+      }
 
       span {
         margin-left: 6px;

@@ -105,7 +105,11 @@ const tempAll10Test = JSON.parse(JSON.stringify(compositeStore.data))
 
 const dialogVisible = ref(false)
 
-// 
+// 存储一百道题的索引的数组
+const save100Index = ref([])
+// 存储十道题的索引的数组
+const save10Index = ref([])
+
 let allTime = ref<any>()
 // @ts-ignore 
 if (route.query.id === 0) {
@@ -178,7 +182,12 @@ const get100Test = () => {
     }
   }
 
+  otherStore.currentTest = [...new Set(otherStore.currentTest)]
+
   if (otherStore.currentTest.length < 100) {
+    // otherStore.currentTest.forEach(item => {
+
+    // })
     get100Test()
   }
 }
@@ -198,6 +207,8 @@ const get10Test = () => {
       otherStore.current10Test.push(tempAll10Test[getRandomNumber2()])
     }
   }
+
+  otherStore.current10Test = [...new Set(otherStore.current10Test)]
 
   if (otherStore.current10Test.length < 10) {
     get10Test()
@@ -330,6 +341,7 @@ const ensureSubmit = () => {
           justify-content: center;
           background-color: #dbecff;
           padding-left: 80px;
+          width: 99.5%;
 
           .el-button {
             margin-left: 20px;

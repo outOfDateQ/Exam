@@ -27,19 +27,62 @@
     </div>
     <div class="right">
       <el-card shadow="never" class="wrap-card">
-        <div class="top">
-          <h1 style="font-size: 20px;">一.单选题(每题1.0分)</h1>
-
-        </div>
+        <!-- <div class="top">
+          <h1 style="font-size: 20px;">一.单选题(共2题，每题1.0分)</h1>
+        </div> -->
 
         <!-- <el-scrollbar ref="scroll"> -->
         <div class="bottom">
           <div class="el-scrollbar">
+            <!-- <div class="top">
+              <h1 style="font-size: 20px;">一.单选题(共2题，每题1.0分)</h1>
+            </div> -->
             <template v-if="otherStore.testFlag === 1">
-              <TestItem v-for="(item, index) in otherStore.currentTest" :key="index" :test="item" :idx="index" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  一.单选题(共24题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="(item, index) in otherStore.currentTest.slice(0, 24)" :key="index" :test="item"
+                :idx="index" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  二.单选题(共5题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="(item, index) in otherStore.currentTest.slice(24, 29)" :key="index" :test="item"
+                :idx="index + 24" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  三.单选题(共15题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="(item, index) in  otherStore.currentTest.slice(29, 44) " :key="index" :test="item"
+                :idx="index + 29" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  四.单选题(共15题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="( item, index ) in  otherStore.currentTest.slice(44, 59) " :key="index" :test="item"
+                :idx="index + 44" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  五.单选题(共8题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="( item, index ) in  otherStore.currentTest.slice(59, 67) " :key="index" :test="item"
+                :idx="index + 59" />
+              <div class="top">
+                <h1 style="font-size: 20px;">
+                  六.单选题(共33题，每题1.0分)
+                </h1>
+              </div>
+              <TestItem v-for="( item, index ) in  otherStore.currentTest.slice(67, 100) " :key="index" :test="item"
+                :idx="index + 67" />
             </template>
             <template v-else>
-              <TestItem v-for="(item, index) in otherStore.current10Test" :key="index" :test="item" :idx="index" />
+              <TestItem v-for="( item, index ) in  otherStore.current10Test " :key="index" :test="item" :idx="index" />
             </template>
           </div>
 
@@ -326,13 +369,11 @@ const ensureSubmit = () => {
         height: 30px;
         margin-bottom: 20px;
         // border-bottom: 1px solid #eee;
-
-
       }
 
 
       .bottom {
-        height: calc((100vh - 20px) - 200px);
+        height: calc((100vh - 20px) - 150px);
 
         .time {
           margin-top: 2px;

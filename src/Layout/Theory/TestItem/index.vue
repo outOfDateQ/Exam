@@ -1,26 +1,59 @@
 <template>
-  <el-card style="width:100%;margin-bottom:20px;">
-    <div class="title">
-      <el-icon @click.stop="playTag($event, idx)" :class="{ active: idx === currentIdx && isTag }" color="#aaa"
-        style="cursor:pointer;">
-        <Flag />
-      </el-icon>
-      <span style="line-height:25px;margin-left:20px;">
-        {{ idx + 1 }}.{{ test.title }}
-      </span>
+  <template v-if="otherStore.testFlag === 0">
+    <div class="top" v-if="idx % 2 === 0">
+      <h1 style="font-size: 20px;">
+        {{ otherStore.titleNum[idx] }}.单选题(共2题，每题1.0分)
+      </h1>
     </div>
-    <el-radio-group v-model="res" class="ml-4">
-      <el-radio label="A" size="large" @click.stop="handleTest(idx)">
-        {{ test.A }}
-      </el-radio>
-      <el-radio label="B" size="large" @click.stop="handleTest(idx)">
-        {{ test.A }}
-      </el-radio>
-      <el-radio label="C" size="large" @click.stop="handleTest(idx)">
-        {{ test.B }}
-      </el-radio>
-    </el-radio-group>
-  </el-card>
+
+    <el-card style="width:100%;margin-bottom:20px;padding: 20px;">
+      <div class="title">
+        <el-icon @click.stop="playTag($event, idx)" :class="{ active: idx === currentIdx && isTag }" color="#aaa"
+          style="cursor:pointer;">
+          <Flag />
+        </el-icon>
+        <span style="line-height:25px;margin-left:20px;">
+          {{ idx + 1 }}.{{ test.title }}
+        </span>
+      </div>
+      <el-radio-group v-model="res" class="ml-4">
+        <el-radio label="A" size="large" @click.stop="handleTest(idx)">
+          {{ test.A }}
+        </el-radio>
+        <el-radio label="B" size="large" @click.stop="handleTest(idx)">
+          {{ test.B }}
+        </el-radio>
+        <el-radio label="C" size="large" @click.stop="handleTest(idx)">
+          {{ test.C }}
+        </el-radio>
+      </el-radio-group>
+    </el-card>
+  </template>
+
+  <template v-else>
+    <el-card style="width:100%;margin-bottom:20px;padding: 20px;">
+      <div class="title">
+        <el-icon @click.stop="playTag($event, idx)" :class="{ active: idx === currentIdx && isTag }" color="#aaa"
+          style="cursor:pointer;">
+          <Flag />
+        </el-icon>
+        <span style="line-height:25px;margin-left:20px;">
+          {{ idx + 1 }}.{{ test.title }}
+        </span>
+      </div>
+      <el-radio-group v-model="res" class="ml-4">
+        <el-radio label="A" size="large" @click.stop="handleTest(idx)">
+          {{ test.A }}
+        </el-radio>
+        <el-radio label="B" size="large" @click.stop="handleTest(idx)">
+          {{ test.B }}
+        </el-radio>
+        <el-radio label="C" size="large" @click.stop="handleTest(idx)">
+          {{ test.C }}
+        </el-radio>
+      </el-radio-group>
+    </el-card>
+  </template>
 </template>
 
 <script setup lang="ts">
@@ -56,6 +89,13 @@ const playTag = (ev: any, idx: number) => {
 </script>
 
 <style scoped lang="scss">
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
 .title {
   display: flex;
   align-items: center;

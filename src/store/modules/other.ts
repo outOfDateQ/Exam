@@ -19,7 +19,9 @@ const useOtherStore = defineStore('other', {
     // 当前考试的标题
     testTitle: 'AOPA理论考试系统',
     // 记录当前考了几次了
-    allTest: 0
+    allTest: 0,
+    // 综合考试的题目标题
+    titleNum: ['一', '', '二', '', '三', '', '四', '', '五', '']
   }),
 
   actions: {},
